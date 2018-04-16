@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://localhost/HelloService.xsd"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://localhost/HelloService.xsd" xmlns:std="http://localhost/StandardDataTypes.xsd">
+
+	<import namespace="http://localhost/StandardDataTypes.xsd"
+		schemaLocation="StandardDataTypes.xsd"></import>
+
+	<element name="SayHelloRequest" type="tns:SayHelloRequest"></element>
+	<element name="SayHelloResponse" type="tns:SayHelloResponse"></element>
+	<element name="FaultResponse" type="tns:FaultResponse"></element>
+
+	<complexType name="SayHelloRequest">
+		<sequence>
+			<element name="Message" type="std:Message" maxOccurs="1"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="SayHelloResponse">
+		<sequence>
+			<element name="Message" type="std:Message" maxOccurs="1"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="FaultResponse">
+		<sequence>
+			<element name="Message" type="std:Message" maxOccurs="1"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+</schema>

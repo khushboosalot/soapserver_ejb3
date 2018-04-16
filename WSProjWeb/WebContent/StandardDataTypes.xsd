@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://localhost/StandardDataTypes.xsd"
+    xmlns:tns="http://localhost/StandardDataTypes.xsd"
+    elementFormDefault="qualified">
+
+    <simpleType name="Message">
+        <restriction base="string">
+            <minLength value="2"></minLength>
+            <maxLength value="300"></maxLength>
+        </restriction>
+    </simpleType>  
+    
+</schema>
