@@ -1,4 +1,4 @@
-# soapserver_ejb3
+# soapserver
 
 The task is to write a simple SOAP server using EJB3. The server will use WSDL first approach.
 
